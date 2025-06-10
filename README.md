@@ -12,17 +12,17 @@ This project automates system updates and installs Nginx using Ansible on a loca
 
 ## 📁 File Structure
 ansible-automation-patching/
-├── README.md
-├── inventory.ini
-├── update_system.yml
-├── run_patch.yml.sh
-├── systemd/
-│ ├── patch-playbook.service
-│ └── patch-playbook.timer
-├── logs/ (optional)
-│ └── example_output.log
-└── docs/ (optional)
-└── screenshots/
+├── README.md\
+├── inventory.ini\
+├── update_system.yml\
+├── run_patch.yml.sh\
+├── systemd/ \
+│ ├── patch-playbook.service\
+│ └── patch-playbook.timer\
+├── logs/ (optional)\
+│ └── example_output.log\
+└── docs/ (optional)\
+└── screenshots/ \
 
 
 ## 🔧 File Descriptions
@@ -57,6 +57,6 @@ journalctl --user-unit=patch-playbook.service
 - firewall-cmd --list-services shows http
 
 ## 👤 Author
-Ryan Quisumbing
-San Diego, CA
-[LinkedIn](http://linkedin.com/in/ryan-quisumbing
+Ryan Quisumbing \
+San Diego, CA \
+[LinkedIn](http://linkedin.com/in/ryan-quisumbing)

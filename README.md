@@ -48,6 +48,7 @@ systemctl --user enable --now patch-playbook.timer
 
 ### To view logs:
 journalctl --user-unit=patch-playbook.service
+```
 
 ## ✅ Validation Checklist
 - dnf history shows recent update

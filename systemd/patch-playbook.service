@@ -1,0 +1,9 @@
+[Unit]
+Description=Run weekly Ansible patching playbook
+
+
+[Service]
+Type=oneshot
+ExecStart=/home/ryan/projects/ansible/scripts/run_patch.yml.sh
+
+

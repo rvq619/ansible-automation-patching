@@ -1,0 +1,37 @@
+# ~/projects/ansible/patching/update_system.yml
+
+- name: update system packages and install Nginx
+  hosts: local 
+  connection: local 
+  become: yes
+
+  vars_files:
+          - vault.yml
+
+  vars:
+          ansible_become_password: "{{ become_pass }}"
+
+  tasks: 
+        - name: ensure all packages are up to date
+          dnf: 
+                name: '*'
+                state: latest 
+
+        - name: install Nginx
+          dnf: 
+                name: nginx
+                state: present 
+
+        - name: enable and start Nginx
+          systemd:
+                  name: nginx
+                  enabled: yes
+                  state: started
+
+        - name: open HTTP port in firewalld
+          firewalld: 
+                service: http
+                permanent: yes
+                state: enabled
+                immediate: yes
+

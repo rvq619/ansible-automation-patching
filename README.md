@@ -22,7 +22,7 @@ ansible-automation-patching/
 ├── logs/ (optional)\
 │ └── example_output.log\
 └── docs/ (optional)\
-└── screenshots/ \
+└── screenshots/ 
 
 
 ## 🔧 File Descriptions

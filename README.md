@@ -43,10 +43,10 @@ ansible-automation-patching/
 ```cron
 0 3 * * 0 ansible-playbook ~/ansible/projects/patching/update_system.yml -i ~/ansible/projects/patching/inventory.ini >> ~/ansible/projects/patching/ansible_cron.log 2>&1
 
-### systemd Timer Example
+systemd Timer Example
 systemctl --user enable --now patch-playbook.timer
 
-### To view logs:
+To view logs:
 journalctl --user-unit=patch-playbook.service
 ```
 

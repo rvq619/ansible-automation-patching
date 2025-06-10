@@ -11,7 +11,7 @@ This project automates system updates and installs Nginx using Ansible on a loca
 - Uses local inventory with privilege escalation (`become: yes`)
 
 ## 📁 File Structure
-ansible-automation-patching/
+ansible-automation-patching/\
 ├── README.md\
 ├── inventory.ini\
 ├── update_system.yml\

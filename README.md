@@ -57,7 +57,7 @@ journalctl --user-unit=patch-playbook.service
 - firewall-cmd --list-services shows http
 
 ## Video Walkthrough
-[![Watch the Video](https://github.com/rvq619/ansible-automation-patching/blob/main/ansible_automation_screen.png)](https://youtu.be/9LvceN8wEQ8))
+[![Watch the Video](https://github.com/rvq619/ansible-automation-patching/blob/main/ansible_automation_screen.png)](https://youtu.be/9LvceN8wEQ8)
 
 ## 👤 Author
 Ryan Quisumbing \

@@ -56,6 +56,9 @@ journalctl --user-unit=patch-playbook.service
 - curl http://localhost returns HTTP 200
 - firewall-cmd --list-services shows http
 
+## Video Walkthrough
+https://github.com/rvq619/ansible-automation-patching/blob/main/ansible_automation.mp4
+
 ## 👤 Author
 Ryan Quisumbing \
 San Diego, CA \
